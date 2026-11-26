@@ -59,7 +59,7 @@
             android:summary="@string/suppress_fullscreen_intent_summary"
             android:title="@string/suppress_fullscreen_intent_title" />
 
-        <com.arrow.support.preferences.SystemSettingSwitchPreference
+        <io.chaldeaprjkt.gamespace.preferences.SystemSettingSwitchPreference
             android:key="bypass_charge_enabled"
             android:summary="@string/bypass_charge_enabled_title"
             android:title="@string/bypass_charge_enabled_summary"
@@ -82,13 +82,12 @@
             android:summary="@string/stay_awake_summary"
             android:title="@string/stay_awake_title" />
 
-        <com.arrow.support.preferences.CustomSeekBarPreference
+        <SeekBarPreference
             android:key="gamespace_menu_opacity"
             android:title="@string/gamespace_menu_opacity_title"
             android:defaultValue="100"
             android:max="100"
-            app:min="20"
-            app:units="%" />
+            app:showSeekBarValue="true" />
 
     </PreferenceCategory>
 
